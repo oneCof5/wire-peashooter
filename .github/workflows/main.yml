@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - run: zip -r ./my-module.zip module.json my-module.js lang/ templates/
+    - uses: actions/checkout@v3
+    - run: zip -r ./wire-peashooter.zip module.json wire-peashooter.js lang/ templates/
     - name: Create Release
       id: create_latest_release
       uses: ncipollo/release-action@v1
