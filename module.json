@@ -1,0 +1,64 @@
+{
+  "id": "wire-peashooter",
+  "title": "Peashooter's WIRE compatible compendium",
+  "description": "Personalized version of Whistler's Item Rolls Extended (WIRE) items.",
+  "authors": [
+    {
+      "name": "Peashooter"
+    }
+  ],
+  "version": "0.10.12",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "packs": [
+    {
+      "name": "items",
+      "label": "Peashooter's Items (WIRE)",
+      "system": "dnd5e",
+      "path": "./packs/items.db",
+      "type": "Item",
+      "flags": {
+        "wireImport": true
+      }
+    },
+    {
+      "name": "spells",
+      "label": "Peashooter's Spells (WIRE)",
+      "system": "dnd5e",
+      "path": "./packs/spells.db",
+      "type": "Item",
+      "flags": {
+        "wireImport": true
+      }
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ],
+    "requires": [
+      {
+        "id": "wire",
+        "type": "module",
+        "manifest": "https://github.com/teroparvinen/foundry-wire/releases/download/v0.10.12/module.json",
+        "compatibility": {
+          "verified": "0.10.12"
+        }
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "name": "wire",
+      "type": "module"
+    }
+  ],
+  "url": "https://github.com/oneCof5/peashooter-wire",
+  "manifest": "https://github.com/oneCof5/peashooter-wire/releases/latest/download/module.json",
+  "download": "https://github.com/oneCof5/peashooter-wire/releases/latest/download/module.zip"
+}
